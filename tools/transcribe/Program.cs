@@ -1,14 +1,6 @@
-﻿using ai.core.transcribe;
+﻿using Spectre.Console.Cli;
+using AI.Tools.Transcribe;
 
-var key = Environment.GetEnvironmentVariable("DEEPGRAM_API_KEY");
-if (string.IsNullOrEmpty(key))
-{
-    throw new InvalidOperationException("The DEEPGRAM_API_KEY environment variable is not set.");
-}
-var file = @"D:\src\Manos\DentaScribe\DentaScribe.Server\Audio\scottish_dentist.mp3";
-
-Transcription response = await DeepgramService.TranscribeAudioAsync(file, key);
-
-Console.WriteLine(response.Text);
-
-
+// Setup command line app
+var app = new CommandApp<TranscribeCommand>();
+return await app.RunAsync(args);

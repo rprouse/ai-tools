@@ -1,4 +1,4 @@
-namespace ai.core.transcribe;
+namespace AI.Tools.Core.Transcribe;
 
 public record Transcription
 {

@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="ai.core/ai.core.csproj" Id="2fd99887-05fa-4bc7-b506-42c98f5ec795" />
-  <Project Path="tools/transcribe/transcribe.csproj" />
+  <Project Path="AI.Core/AI.Core.csproj" Id="2fd99887-05fa-4bc7-b506-42c98f5ec795" />
+  <Project Path="Tools/Transcribe/Transcribe.csproj" />
 </Solution>

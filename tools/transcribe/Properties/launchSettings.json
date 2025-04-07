@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Transcribe": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\src\\Manos\\DentaScribe\\DentaScribe.Server\\Audio\\scottish_dentist.mp3\""
+    }
+  }
+}

@@ -2,7 +2,7 @@
 using Deepgram.Logger;
 using Deepgram.Models.Listen.v1.REST;
 
-namespace ai.core.transcribe;
+namespace AI.Tools.Core.Transcribe;
 
 public class DeepgramService
 {
