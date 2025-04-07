@@ -1,5 +1,4 @@
-﻿using ai.core;
-using ai.core.transcribe;
+﻿using ai.core.transcribe;
 
 var key = Environment.GetEnvironmentVariable("DEEPGRAM_API_KEY");
 if (string.IsNullOrEmpty(key))
@@ -8,8 +7,8 @@ if (string.IsNullOrEmpty(key))
 }
 var file = @"D:\src\Manos\DentaScribe\DentaScribe.Server\Audio\scottish_dentist.mp3";
 
-string response = await DeepgramService.TranscribeAudioAsync(file, key);
+Transcription response = await DeepgramService.TranscribeAudioAsync(file, key);
 
-Console.WriteLine(response);
+Console.WriteLine(response.Text);
 
 
