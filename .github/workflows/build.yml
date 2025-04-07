@@ -13,9 +13,6 @@ jobs:
     steps:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
-        with:
-          submodules: true   # Fetch and checkout submodules
-          fetch-depth: 0     # Ensure the full history is fetched, useful when dealing with submodules
 
       - name: 🔧 Setup .NET 9.0 SDK
         uses: actions/setup-dotnet@v3
