@@ -1,7 +1,7 @@
 ﻿using Deepgram;
 using Deepgram.Models.Listen.v1.REST;
 
-namespace ai.core;
+namespace ai.core.transcribe;
 
 public class DeepgramService
 {
