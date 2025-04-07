@@ -27,12 +27,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Working directory
-        run: pwd
-
-      - name: Directory Listing
-        run: ls -laR .
-
       - name: 💉 Install dependencies
         run: dotnet restore
 
